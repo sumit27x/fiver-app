@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fiver-app/static/css/main.47e65136.css",
+    "main.js": "/fiver-app/static/js/main.92c90b82.js",
+    "index.html": "/fiver-app/index.html",
+    "main.47e65136.css.map": "/fiver-app/static/css/main.47e65136.css.map",
+    "main.92c90b82.js.map": "/fiver-app/static/js/main.92c90b82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47e65136.css",
+    "static/js/main.92c90b82.js"
+  ]
+}
