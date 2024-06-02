@@ -1,6 +1,6 @@
-import "./app.scss";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
@@ -15,66 +15,26 @@ import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
 
 function App() {
-  const Layout = () => {
-    return (
+  return (
+    <Router>
       <div className="app">
         <Navbar />
-        <Outlet />
-        {/* <Footer /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/gigs" element={<Gigs />} />
+          <Route path="/myGigs" element={<MyGigs />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/message/:id" element={<Message />} />
+          <Route path="/add" element={<Add />} />
+          <Route path="/gig/:id" element={<Gig />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
       </div>
-    );
-  };
-
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/gigs",
-          element: <Gigs />,
-        },
-        {
-          path: "/myGigs",
-          element: <MyGigs />,
-        },
-        {
-          path: "/orders",
-          element: <Orders />,
-        },
-        {
-          path: "/messages",
-          element: <Messages />,
-        },
-        {
-          path: "/message/:id",
-          element: <Message />,
-        },
-        {
-          path: "/add",
-          element: <Add />,
-        },
-        {
-          path: "/gig/:id",
-          element: <Gig />,
-        },
-      ],
-    },
-    {
-      path: "/register",
-      element: <Register />,
-    },
-    {
-      path: "/login",
-      element: <Login />,
-    },
-  ]);
-
-  return <RouterProvider router={router} />;
+    </Router>
+  );
 }
 
 export default App;
