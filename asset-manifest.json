@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fiver-app/static/css/main.47e65136.css",
-    "main.js": "/fiver-app/static/js/main.92c90b82.js",
+    "main.css": "/fiver-app/static/css/main.6d99610b.css",
+    "main.js": "/fiver-app/static/js/main.0366fcc7.js",
     "index.html": "/fiver-app/index.html",
-    "main.47e65136.css.map": "/fiver-app/static/css/main.47e65136.css.map",
-    "main.92c90b82.js.map": "/fiver-app/static/js/main.92c90b82.js.map"
+    "main.6d99610b.css.map": "/fiver-app/static/css/main.6d99610b.css.map",
+    "main.0366fcc7.js.map": "/fiver-app/static/js/main.0366fcc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.47e65136.css",
-    "static/js/main.92c90b82.js"
+    "static/css/main.6d99610b.css",
+    "static/js/main.0366fcc7.js"
   ]
 }
